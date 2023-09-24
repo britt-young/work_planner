@@ -12,6 +12,19 @@ textarea {
   padding: 10px;
 }
 
+.p-5 {
+  text-align: center;
+  background-color: rgb(10, 55, 70);
+  color: #fff;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
+
+p.lead{
+  font-style: italic;
+  color:#457f92
+}
+
 .description {
   white-space: pre-wrap;
 }
