@@ -44,17 +44,17 @@ p.lead{
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: rgb(190, 192, 191);
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #f7bbb8;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #a2e9a2;
   color: white;
 }
 
@@ -68,5 +68,5 @@ p.lead{
 
 .saveBtn i:hover {
   font-size: 20px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s;
 }
