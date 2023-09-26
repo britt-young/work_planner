@@ -12,7 +12,7 @@ textarea {
   padding: 10px;
 }
 
-.header {
+.jumbotron {
   text-align: center;
   background-color: rgb(10, 55, 70);
   color: #fff;
@@ -30,6 +30,7 @@ p.lead{
 }
 
 .time-block {
+  text-align: center;
   border-radius: 15px;
 }
 

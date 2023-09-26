@@ -15,27 +15,21 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="jumbotron jumbotron-fluid head"></div>
     <h1 class="display-3">Weekday Planner</h1>
     <p class="lead">“Life Is Too Complicated Not To Be Orderly.” - Martha Stewart</p>
-    <p id="currentDay" id="currentTime"></p>
+    <p id="currentDay"> </p>
+    <p id="currentTime"> </p>
     <button class="btn btn-warning" style="margin-bottom:1em" id="clearBtn">Clear Schedule</button>
   </header>
-  <div class="container-fluid px-5">
-    <!-- Use class for "past", "present", and "future" to apply styles to the
-        time-block divs accordingly. The javascript will need to do this by
-        adding/removing these classes on each div by comparing the hour in the
-        id to the current hour. The html provided below is meant to be an example
-        demonstrating how the css provided can be leveraged to create the
-        desired layout and colors. The html below should be removed or updated
-        in the finished product. Remember to delete this comment once the
-        code is implemented.
-        -->
 
+  <div class="container-fluid px-5">
     <!-- Example of a past time block. The "past" class adds a gray background color. -->
     <div id="hour-9" class="row time-block">
-      <div class="col-2 col-md-1 hour text-center py-3">9AM</div>
-      <textarea class="col-8 col-md-10 description" rows="3" data-hour="9" id="div9"> </textarea>
+      <div class="col-2 col-md-1 hour text-center py-3">
+        9AM
+      </div>
+      <textarea class="col-8 col-md-10 description" rows="3" data-hour='9' id="div9"> </textarea>
       <button class="btn saveBtn col-2 col-md-1" aria-label="save" id="btn9">
         <i class="fas fa-save" aria-hidden="true"></i>
       </button>
@@ -43,7 +37,9 @@
 
     <!-- Example of a present time block. The "present" class adds a red background color. -->
     <div id="hour-10" class="row time-block">
-      <div class="col-2 col-md-1 hour text-center py-3">10AM</div>
+      <div class="col-2 col-md-1 hour text-center py-3">
+        10AM
+      </div>
       <textarea class="col-8 col-md-10 description" rows="3" data-hour="10" id="div10"> </textarea>
       <button class="btn saveBtn col-2 col-md-1" aria-label="save" id="btn10">
         <i class="fas fa-save" aria-hidden="true"></i>
@@ -52,7 +48,9 @@
 
     <!-- Example of a future time block. The "future" class adds a green background color. -->
     <div id="hour-11" class="row time-block">
-      <div class="col-2 col-md-1 hour text-center py-3">11AM</div>
+      <div class="col-2 col-md-1 hour text-center py-3">
+        11AM
+      </div>
       <textarea class="col-8 col-md-10 description" rows="3" data-hour="11" id="div11"> </textarea>
       <button class="btn saveBtn col-2 col-md-1" aria-label="save" id="btn11">
         <i class="fas fa-save" aria-hidden="true"></i>
@@ -60,7 +58,9 @@
     </div>
 
     <div id="hour-12" class="row time-block">
-      <div class="col-2 col-md-1 hour text-center py-3">12PM</div>
+      <div class="col-2 col-md-1 hour text-center py-3">
+        12PM
+      </div>
       <textarea class="col-8 col-md-10 description" rows="3" data-hour="12" id="div12"> </textarea>
       <button class="btn saveBtn col-2 col-md-1" aria-label="save" id="btn12">
         <i class="fas fa-save" aria-hidden="true"></i>
@@ -68,7 +68,9 @@
     </div>
 
     <div id="hour-1" class="row time-block">
-      <div class="col-2 col-md-1 hour text-center py-3">1PM</div>
+      <div class="col-2 col-md-1 hour text-center py-3">
+        1PM
+      </div>
       <textarea class="col-8 col-md-10 description" rows="3" data-hour="1" id="div1"> </textarea>
       <button class="btn saveBtn col-2 col-md-1" aria-label="save" id="btn1">
         <i class="fas fa-save" aria-hidden="true"></i>
@@ -76,7 +78,9 @@
     </div>
 
     <div id="hour-2" class="row time-block">
-      <div class="col-2 col-md-1 hour text-center py-3">2PM</div>
+      <div class="col-2 col-md-1 hour text-center py-3">
+        2PM
+      </div>
       <textarea class="col-8 col-md-10 description" rows="3" data-hour="2" id="div2"> </textarea>
       <button class="btn saveBtn col-2 col-md-1" aria-label="save" id="btn2">
         <i class="fas fa-save" aria-hidden="true"></i>
@@ -84,7 +88,9 @@
     </div>
 
     <div id="hour-3" class="row time-block">
-      <div class="col-2 col-md-1 hour text-center py-3">3PM</div>
+      <div class="col-2 col-md-1 hour text-center py-3">
+        3PM
+      </div>
       <textarea class="col-8 col-md-10 description" rows="3" data-hour="3" id="div3"> </textarea>
       <button class="btn saveBtn col-2 col-md-1" aria-label="save" id="btn3">
         <i class="fas fa-save" aria-hidden="true"></i>
@@ -92,7 +98,9 @@
     </div>
 
     <div id="hour-4" class="row time-block">
-      <div class="col-2 col-md-1 hour text-center py-3">4PM</div>
+      <div class="col-2 col-md-1 hour text-center py-3">
+        4PM
+      </div>
       <textarea class="col-8 col-md-10 description" rows="3" data-hour="4" id="div4"> </textarea>
       <button class="btn saveBtn col-2 col-md-1" aria-label="save" id="btn4">
         <i class="fas fa-save" aria-hidden="true"></i>
@@ -100,7 +108,9 @@
     </div>
 
     <div id="hour-5" class="row time-block">
-      <div class="col-2 col-md-1 hour text-center py-3">5PM</div>
+      <div class="col-2 col-md-1 hour text-center py-3">
+        5PM
+      </div>
       <textarea class="col-8 col-md-10 description" rows="3" data-hour="5" id="div5"> </textarea>
       <button class="btn saveBtn col-2 col-md-1" aria-label="save" id="btn5">
         <i class="fas fa-save" aria-hidden="true"></i>
@@ -108,11 +118,11 @@
     </div>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js" integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
 
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>

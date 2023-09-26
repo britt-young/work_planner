@@ -1,7 +1,7 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
-$(function () {
+
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
@@ -20,7 +20,6 @@ $(function () {
   // attribute of each time-block be used to do this?
   //
   // TODO: Add code to display the current date in the header of the page.
-});
 
 $(document).ready(function () {
   //grab IDs from document html and assign to variable
@@ -59,7 +58,8 @@ $(document).ready(function () {
   let button5 = $("#btn5");
   let clearBtn = $("#clearBtn");
 
-  var timeNow = parseInt(moment().format("HH"));
+  //gets current time
+  var timeNow = parseInt(dayjs().format("HH"));
 
   //clears local storage each time
   function clear() {
@@ -75,14 +75,14 @@ $(document).ready(function () {
     box11.val("");
     box12.val("");
   }
-  //creates a running clock
+  //
   function tick() {
-    dayEl.text(moment().format("LL"));
-    timeEl.text(moment().format("hh:mm:ssA"));
-    $(".header").append(dayEl);
-    $(".header").append(timeEl);
+    dayEl.text(dayjs().format("MMMM DD, YYYY"));
+    timeEl.text(dayjs().format("hh:mm:ssA"));
+    $(".jumbotron").append(dayEl);
+    $(".jumbotron").append(timeEl);
   }
-  //determines if event is in the past, present, or future
+  //determines if event is in the past, present, or future based on variable timeNow
   function checkTime() {
     if (parseInt(box9.attr("data-hour")) > timeNow) {
       box9.removeClass("past present future");
@@ -184,73 +184,75 @@ $(document).ready(function () {
     }
   }
 
+  //run timmer
   tick();
+  //timer interval 1 second
   setInterval(tick, 1000);
   setInterval(checkTime, 600000);
   clearBtn.on("click", clear);
 
   button9.on("click", function () {
-    event.preventDefault();
+    preventDefault();
     if (box9.val() !== "") {
-      localStorage.setItem("Entry9", box9.val());
+      localStorage.setItem("userInput9", box9.val());
     }
   });
 
-  button10.on("click", function () {
+  button10.on("click", function (event) {
     event.preventDefault();
     if (box10.val() !== "") {
-      localStorage.setItem("Entry10", box10.val());
+      localStorage.setItem("userInput10", box10.val());
     }
   });
 
-  button11.on("click", function () {
+  button11.on("click", function (event) {
     event.preventDefault();
     if (box11.val() !== "") {
-      localStorage.setItem("Entry11", box11.val());
+      localStorage.setItem("userInput11", box11.val());
     }
   });
 
-  button12.on("click", function () {
+  button12.on("click", function (event) {
     event.preventDefault();
     if (box12.val() !== "") {
-      localStorage.setItem("Entry12", box12.val());
+      localStorage.setItem("userInput12", box12.val());
     }
   });
 
-  button1.on("click", function () {
+  button1.on("click", function (event) {
     event.preventDefault();
     if (box1.val() !== "") {
-      localStorage.setItem("Entry1", box1.val());
+      localStorage.setItem("userInput1", box1.val());
     }
   });
 
-  button2.on("click", function () {
+  button2.on("click", function (event) {
     event.preventDefault();
     if (box2.val() !== "") {
-      localStorage.setItem("Entry2", box2.val());
+      localStorage.setItem("userInput2", box2.val());
     }
   });
 
-  button3.on("click", function () {
+  button3.on("click", function (event) {
     event.preventDefault();
     if (box3.val() !== "") {
-      localStorage.setItem("Entry3", box3.val());
+      localStorage.setItem("userInput3", box3.val());
     }
   });
 
-  button4.on("click", function () {
+  button4.on("click", function (event) {
     event.preventDefault();
 
     if (box4.val() !== "") {
-      localStorage.setItem("Entry4", box4.val());
+      localStorage.setItem("userInput4", box4.val());
     }
   });
 
-  button5.on("click", function () {
+  button5.on("click", function (event) {
     event.preventDefault();
 
     if (box5.val() !== "") {
-      localStorage.setItem("Entry5", box5.val());
+      localStorage.setItem("userInput5", box5.val());
     }
   });
 
