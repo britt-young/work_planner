@@ -17,7 +17,11 @@ textarea {
   background-color: rgb(10, 55, 70);
   color: #fff;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 1px solid black;
+}
+
+.container-fluid {
+  margin-top: 10px;
 }
 
 p.lead{
@@ -60,10 +64,10 @@ p.lead{
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  border-left: 1px solid white;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: #cc9a0f;
   color: white;
 }
 
