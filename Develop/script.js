@@ -184,8 +184,9 @@ $(document).ready(function () {
     }
   }
 
-  //run timmer
+  //calls the date and time display
   tick();
+
   //timer interval 1 second
   setInterval(tick, 1000);
   setInterval(checkTime, 600000);
@@ -198,59 +199,57 @@ $(document).ready(function () {
     }
   });
 
-  button10.on("click", function (event) {
-    event.preventDefault();
+  button10.on("click", function () {
+    preventDefault();
     if (box10.val() !== "") {
       localStorage.setItem("userInput10", box10.val());
     }
   });
 
-  button11.on("click", function (event) {
-    event.preventDefault();
+  button11.on("click", function () {
+    preventDefault();
     if (box11.val() !== "") {
       localStorage.setItem("userInput11", box11.val());
     }
   });
 
-  button12.on("click", function (event) {
-    event.preventDefault();
+  button12.on("click", function () {
+    preventDefault();
     if (box12.val() !== "") {
       localStorage.setItem("userInput12", box12.val());
     }
   });
 
-  button1.on("click", function (event) {
-    event.preventDefault();
+  button1.on("click", function () {
+    preventDefault();
     if (box1.val() !== "") {
       localStorage.setItem("userInput1", box1.val());
     }
   });
 
-  button2.on("click", function (event) {
-    event.preventDefault();
+  button2.on("click", function () {
+    preventDefault();
     if (box2.val() !== "") {
       localStorage.setItem("userInput2", box2.val());
     }
   });
 
-  button3.on("click", function (event) {
-    event.preventDefault();
+  button3.on("click", function () {
+    preventDefault();
     if (box3.val() !== "") {
       localStorage.setItem("userInput3", box3.val());
     }
   });
 
-  button4.on("click", function (event) {
-    event.preventDefault();
-
+  button4.on("click", function () {
+    preventDefault();
     if (box4.val() !== "") {
       localStorage.setItem("userInput4", box4.val());
     }
   });
 
-  button5.on("click", function (event) {
-    event.preventDefault();
-
+  button5.on("click", function () {
+    preventDefault();
     if (box5.val() !== "") {
       localStorage.setItem("userInput5", box5.val());
     }
