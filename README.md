@@ -15,8 +15,9 @@ No installation is needed, the work planner is accessed through a web URL, and u
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
 
-    ![alt text]()
+    ![deployedWebAppSnippet]()
     
+Deployed Link: https://britt-young.github.io/work_planner/
 
 ## Credits
 While creating the 'work day scheduler' I relied on notes and examples from the University of Utah Fullstack Developer Bootcamp and their Teaching Assistants
