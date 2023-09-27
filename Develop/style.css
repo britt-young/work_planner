@@ -54,17 +54,17 @@ p.lead{
 
 .past {
   background-color: rgb(190, 192, 191);
-  color: white;
+  color: black;
 }
 
 .present {
   background-color: #f7bbb8;
-  color: white;
+  color: #9c241e;
 }
 
 .future {
   background-color: #a2e9a2;
-  color: white;
+  color: #407c40;
 }
 
 .saveBtn {
