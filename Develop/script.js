@@ -187,69 +187,71 @@ $(document).ready(function () {
   //calls the date and time display
   tick();
 
-  //timer interval 1 second
   setInterval(tick, 1000);
   setInterval(checkTime, 600000);
+
+// clears schedule when "clear" btn is clicked
   clearBtn.on("click", clear);
 
-  button9.on("click", function () {
-    preventDefault();
+  // saves user input into local storage and prevents clearing data upload page refresh
+  button9.on("click", function (event) {
+    event.preventDefault();
     if (box9.val() !== "") {
       localStorage.setItem("userInput9", box9.val());
     }
   });
 
-  button10.on("click", function () {
-    preventDefault();
+  button10.on("click", function (event) {
+    event.preventDefault();
     if (box10.val() !== "") {
       localStorage.setItem("userInput10", box10.val());
     }
   });
 
-  button11.on("click", function () {
-    preventDefault();
+  button11.on("click", function (event) {
+    event.preventDefault();
     if (box11.val() !== "") {
       localStorage.setItem("userInput11", box11.val());
     }
   });
 
-  button12.on("click", function () {
-    preventDefault();
+  button12.on("click", function (event) {
+    event.preventDefault();
     if (box12.val() !== "") {
       localStorage.setItem("userInput12", box12.val());
     }
   });
 
-  button1.on("click", function () {
-    preventDefault();
+  button1.on("click", function (event) {
+    event.preventDefault();
     if (box1.val() !== "") {
       localStorage.setItem("userInput1", box1.val());
     }
   });
 
-  button2.on("click", function () {
-    preventDefault();
+  button2.on("click", function (event) {
+    event.preventDefault();
     if (box2.val() !== "") {
       localStorage.setItem("userInput2", box2.val());
     }
   });
 
-  button3.on("click", function () {
-    preventDefault();
+  button3.on("click", function (event) {
+    event.preventDefault();
     if (box3.val() !== "") {
       localStorage.setItem("userInput3", box3.val());
     }
   });
 
-  button4.on("click", function () {
-    preventDefault();
+  button4.on("click", function (event) {
+    event.preventDefault();
     if (box4.val() !== "") {
       localStorage.setItem("userInput4", box4.val());
     }
   });
 
-  button5.on("click", function () {
-    preventDefault();
+  button5.on("click", function (event) {
+    event.preventDefault();
     if (box5.val() !== "") {
       localStorage.setItem("userInput5", box5.val());
     }
