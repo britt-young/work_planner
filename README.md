@@ -15,7 +15,7 @@ No installation is needed, the work planner is accessed through a web URL, and u
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
 
-    ![deployedWebAppSnippet](Assets/Mock_up_snapshot.png)
+    ![mock_up]("\Assets\Mock_up_snapshot.png")
     
 Deployed Link: https://britt-young.github.io/work_planner/
 
