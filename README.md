@@ -13,7 +13,7 @@ No installation is needed, the work planner is accessed through a web URL, and u
 * When ready to save the text in the time slot, the user can navigate to the far right of the designated timeslot and click the "save" button annotated with a floppy-disk icon
 * All data is saved into localStorage and will be accessible to the user even upon page refresh
 
-    ![mock_up](["\Assets\Mock_up_snapshot.png"](https://github.com/britt-young/work_planner/blob/main/Assets/Mock_up_snapshot.png?raw=true))
+    ![mock_up](https://github.com/britt-young/work_planner/blob/main/Assets/Mock_up_snapshot.png?raw=true)
     
 Deployed Link: https://britt-young.github.io/work_planner/
 
